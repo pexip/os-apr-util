@@ -1,3 +1,9 @@
+apr-util (1.5.3-1pexip2) pexip; urgency=low
+
+  * Rebuild against libssl1.0.2
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 11 Oct 2016 23:30:04 +0100
+
 apr-util (1.5.3-1pexip1) pexip; urgency=low
 
   * Prepare Pexip packaging.
