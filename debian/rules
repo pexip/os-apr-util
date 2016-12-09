@@ -39,7 +39,7 @@ CONFFLAGS := LTFLAGS=--no-silent \
 	     --with-dbm=db$(DB_VERSION) \
 	     --with-sqlite3 \
 	     --with-pgsql=/usr \
-	     --without-gdbm \
+	     --with-gdbm \
 	     --without-sqlite2 \
 	     --with-berkeley-db \
 	     --with-mysql=/usr \

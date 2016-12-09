@@ -3,9 +3,9 @@ Section: libs
 Priority: optional
 Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
 Uploaders: Stefan Fritsch <sf@debian.org>, Peter Samuelson <peter@p12n.org>
-Build-Depends: debhelper (>> 9~), autoconf, autotools-dev, mawk, libldap2-dev, libexpat1-dev, libdb-dev, libpcre3-dev, binutils, libapr1-dev (>> 1.4.8-2~), libsqlite3-dev, libpq-dev, python, libmysqlclient-dev, unixodbc-dev, doxygen, libssl-dev
-Standards-Version: 3.9.6
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-apache/apr-util.git
+Build-Depends: debhelper (>> 9~), autoconf, autotools-dev, mawk, libldap2-dev, libexpat1-dev, libdb-dev, libgdbm-dev, libpcre3-dev, libapr1-dev (>> 1.4.8-2~), libsqlite3-dev, libpq-dev, python:any, default-libmysqlclient-dev, unixodbc-dev, doxygen, libssl-dev
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-apache/apr-util.git
 Vcs-Git: git://anonscm.debian.org/pkg-apache/apr-util.git
 Homepage: http://apr.apache.org/
 
@@ -51,7 +51,7 @@ Description: Apache Portable Runtime Utility Library - MySQL Driver
  APR Util is a utilities library implemented on top of apr, providing database
  access, xml parsing, and other useful functionality.
  .
- This package contains the MySQL database driver.
+ This package contains the MySQL / mariadb database driver.
 
 Package: libaprutil1-dbd-sqlite3
 Architecture: any

@@ -1,3 +1,29 @@
+apr-util (1.5.4-3) unstable; urgency=medium
+
+  [ Helmut Grohne ]
+  * Fix unsatisfiable cross Build-Depends: (Closes: #840892)
+    + Drop binutils from Build-Depends as it is build-essential.
+    + Annotate Build-Depends: python with :any.
+
+  [ Stefan Fritsch ]
+  * Enable support for gdbm. Closes: #843206
+  * Switch build-depends to default-libmysqlclient-dev. Closes: #845823
+
+ -- Stefan Fritsch <sf@debian.org>  Fri, 09 Dec 2016 18:19:55 +0100
+
+apr-util (1.5.4-2) unstable; urgency=medium
+
+  [ Jean-Michel Vourgère ]
+  * d/watch: Check gpg signature of upstream source.
+  * Update Vcs-Browser: address.
+
+  [ Stefan Fritsch ]
+  * Bump standards version. No changes needed.
+  * Backport support for openssl 1.1 from upstream 1.5.x branch.
+    Closes: #828237
+
+ -- Stefan Fritsch <sf@debian.org>  Thu, 14 Jul 2016 12:00:56 +0200
+
 apr-util (1.5.4-1) unstable; urgency=medium
 
   * New upstream release
