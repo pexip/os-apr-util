@@ -10,3 +10,4 @@ avoid_db_by-default.patch
 test_verbose
 fix_doxygen_inputdir
 support_mariadb.patch
+openssl-1.1.patch
