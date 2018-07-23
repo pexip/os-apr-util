@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Pexip AS <packaging@pexip.com>
 XSBC-Pexip-Original-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
 XSBC-Pexip-Original-Uploaders: Stefan Fritsch <sf@debian.org>, Peter Samuelson <peter@p12n.org>
-Build-Depends: debhelper (>> 9~), autoconf, autotools-dev, mawk, libldap2-dev, libexpat1-dev, libdb-dev, libgdbm-dev, libpcre3-dev, libapr1-dev (>> 1.4.8-2~), libsqlite3-dev, libpq-dev, python:any, default-libmysqlclient-dev, unixodbc-dev, doxygen, libssl-dev
+Build-Depends: debhelper (>> 9~), autoconf, autotools-dev, mawk, libldap2-dev, libexpat1-dev, libdb-dev, libgdbm-dev, libpcre3-dev, libapr1-dev (>> 1.4.8-2~), libsqlite3-dev, libpq-dev, python:any, default-libmysqlclient-dev, unixodbc-dev, doxygen, libssl1.0-dev | libssl-dev (<< 1.1)
 Standards-Version: 3.9.8
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-apache/apr-util.git
 Vcs-Git: git://anonscm.debian.org/pkg-apache/apr-util.git
