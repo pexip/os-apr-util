@@ -5,9 +5,9 @@ debian_layout_fix.patch
 dont_use_all_pg_build_deps.patch
 avoid_ldap_by_defaut.patch
 apu_config_dont_list_indep_libs.patch
-disable_expat_buildconf.patch
 avoid_db_by-default.patch
 test_verbose
 fix_doxygen_inputdir
 support_mariadb.patch
-openssl-1.1.patch
+doxygen_no_ful_path_names.patch
+fix_gdbm_error_handling

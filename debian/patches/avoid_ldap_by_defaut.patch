@@ -2,11 +2,9 @@ From: Ryan Niebur <ryanryan52@gmail.com>
 Subject: by default --avoid-ldap since apache2 is the only user, and we don't
  want to add extra dependencies to other apr-utils rdepends
 
-Index: trunk/apu-config.in
-===================================================================
---- trunk.orig/apu-config.in
-+++ trunk/apu-config.in
-@@ -30,7 +30,8 @@
+--- apr-util.orig/apu-config.in
++++ apr-util/apu-config.in
+@@ -30,7 +30,8 @@ includedir="@includedir@"
  LIBS="@APRUTIL_EXPORT_LIBS@"
  INCLUDES="@APRUTIL_INCLUDES@"
  LDFLAGS="@APRUTIL_LDFLAGS@"
@@ -16,7 +14,7 @@ Index: trunk/apu-config.in
  DBM_LIBS="@LDADD_dbm_db@ @LDADD_dbm_gdbm@ @LDADD_dbm_ndbm@"
  
  APRUTIL_LIBNAME="@APRUTIL_LIBNAME@"
-@@ -55,7 +56,7 @@
+@@ -55,7 +56,7 @@ Known values for OPTION are:
    --includedir      print location where headers are installed
    --ldflags         print linker flags
    --libs            print library information
@@ -25,7 +23,7 @@ Index: trunk/apu-config.in
    --ldap-libs       print library information to link with ldap
    --avoid-dbm       do not include DBM library information with --libs
    --dbm-libs        print additional library information to link with DBM
-@@ -125,7 +126,7 @@
+@@ -121,7 +122,7 @@ while test $# -gt 0; do
      flags="$flags $LDAP_LIBS $DBM_LIBS $LIBS"
      ;;
      --ldap-libs)

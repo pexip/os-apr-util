@@ -6,11 +6,9 @@ Subject: Adjust LDFLAGS and INCLUDE
  configure.in |    3 +++
  1 file changed, 3 insertions(+)
 
-Index: trunk/configure.in
-===================================================================
---- trunk.orig/configure.in
-+++ trunk/configure.in
-@@ -213,6 +213,9 @@
+--- apr-util.orig/configure.in
++++ apr-util/configure.in
+@@ -270,6 +270,9 @@ dnl Prep all the flags and stuff for com
  dnl
  APR_ADDTO(APRUTIL_LIBS, [$APR_LIBS])
  

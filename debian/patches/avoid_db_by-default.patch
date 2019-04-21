@@ -1,11 +1,9 @@
 From: Stefan Fritsch <sf@debian.org>
 Subject: Make apu-config not output dbm libs by default. See #622081
 
-Index: apr-util/apu-config.in
-===================================================================
 --- apr-util.orig/apu-config.in
 +++ apr-util/apu-config.in
-@@ -32,7 +32,8 @@
+@@ -32,7 +32,8 @@ INCLUDES="@APRUTIL_INCLUDES@"
  LDFLAGS="@APRUTIL_LDFLAGS@"
  ORIG_LDAP_LIBS="@LDADD_ldap@"
  LDAP_LIBS=""
@@ -15,7 +13,7 @@ Index: apr-util/apu-config.in
  
  APRUTIL_LIBNAME="@APRUTIL_LIBNAME@"
  
-@@ -58,8 +59,8 @@
+@@ -58,8 +59,8 @@ Known values for OPTION are:
    --libs            print library information
    --avoid-ldap      do not include ldap library information with --libs (default on Debian)
    --ldap-libs       print library information to link with ldap
@@ -26,7 +24,7 @@ Index: apr-util/apu-config.in
    --srcdir          print APR-util source directory
    --link-ld         print link switch(es) for linking to APR-util
    --link-libtool    print the libtool inputs for linking to APR-util
-@@ -129,7 +130,7 @@
+@@ -125,7 +126,7 @@ while test $# -gt 0; do
      flags="$flags $ORIG_LDAP_LIBS"
      ;;
      --dbm-libs)
