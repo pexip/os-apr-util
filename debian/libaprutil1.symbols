@@ -4,6 +4,7 @@ libaprutil-1.so.0 libaprutil1 #MINVER#
  _crypt_blowfish_rn@Base 1.5.0
  _crypt_gensalt_blowfish_rn@Base 1.5.0
  _crypt_output_magic@Base 1.5.0
+ apr__memzero_explicit@Base 1.6.0
  apr_base64_decode@Base 1.2.7+dfsg
  apr_base64_decode_binary@Base 1.2.7+dfsg
  apr_base64_decode_len@Base 1.2.7+dfsg
@@ -32,6 +33,7 @@ libaprutil-1.so.0 libaprutil1 #MINVER#
  apr_brigade_write@Base 1.2.7+dfsg
  apr_brigade_writev@Base 1.2.7+dfsg
  apr_bucket_alloc@Base 1.2.7+dfsg
+ apr_bucket_alloc_aligned_floor@Base 1.6.0
  apr_bucket_alloc_create@Base 1.2.7+dfsg
  apr_bucket_alloc_create_ex@Base 1.2.7+dfsg
  apr_bucket_alloc_destroy@Base 1.2.7+dfsg
@@ -42,6 +44,7 @@ libaprutil-1.so.0 libaprutil1 #MINVER#
  apr_bucket_file_create@Base 1.2.7+dfsg
  apr_bucket_file_enable_mmap@Base 1.2.7+dfsg
  apr_bucket_file_make@Base 1.2.7+dfsg
+ apr_bucket_file_set_buf_size@Base 1.6.0
  apr_bucket_flush_create@Base 1.2.7+dfsg
  apr_bucket_flush_make@Base 1.2.7+dfsg
  apr_bucket_free@Base 1.2.7+dfsg
@@ -88,12 +91,15 @@ libaprutil-1.so.0 libaprutil1 #MINVER#
  apr_crypto_cleanup@Base 1.4.0
  apr_crypto_clear@Base 1.4.0
  apr_crypto_driver_name@Base 1.4.0
+ apr_crypto_equals@Base 1.6.0
  apr_crypto_error@Base 1.4.0
  apr_crypto_get_block_key_modes@Base 1.4.0
  apr_crypto_get_block_key_types@Base 1.4.0
  apr_crypto_get_driver@Base 1.4.0
  apr_crypto_init@Base 1.4.0
+ apr_crypto_key@Base 1.6.0
  apr_crypto_make@Base 1.4.0
+ apr_crypto_memzero@Base 1.6.0
  apr_crypto_passphrase@Base 1.4.0
  apr_crypto_shutdown@Base 1.4.0
  apr_current_hooking_module@Base 1.2.7+dfsg
@@ -222,6 +228,28 @@ libaprutil-1.so.0 libaprutil1 #MINVER#
  apr_queue_term@Base 1.2.7+dfsg
  apr_queue_trypop@Base 1.2.7+dfsg
  apr_queue_trypush@Base 1.2.7+dfsg
+ apr_redis_add_server@Base 1.6.0
+ apr_redis_create@Base 1.6.0
+ apr_redis_decr@Base 1.6.0
+ apr_redis_delete@Base 1.6.0
+ apr_redis_disable_server@Base 1.6.0
+ apr_redis_enable_server@Base 1.6.0
+ apr_redis_find_server@Base 1.6.0
+ apr_redis_find_server_hash@Base 1.6.0
+ apr_redis_find_server_hash_default@Base 1.6.0
+ apr_redis_getp@Base 1.6.0
+ apr_redis_hash@Base 1.6.0
+ apr_redis_hash_crc32@Base 1.6.0
+ apr_redis_hash_default@Base 1.6.0
+ apr_redis_incr@Base 1.6.0
+ apr_redis_info@Base 1.6.0
+ apr_redis_multgetp@Base 1.6.0
+ apr_redis_ping@Base 1.6.0
+ apr_redis_server_create@Base 1.6.0
+ apr_redis_set@Base 1.6.0
+ apr_redis_setex@Base 1.6.0
+ apr_redis_stats@Base 1.6.0
+ apr_redis_version@Base 1.6.0
  apr_reslist_acquire@Base 1.2.7+dfsg
  apr_reslist_acquired_count@Base 1.3.2+dfsg
  apr_reslist_cleanup_order_set@Base 1.4.0
@@ -257,6 +285,12 @@ libaprutil-1.so.0 libaprutil1 #MINVER#
  apr_sha1_init@Base 1.2.7+dfsg
  apr_sha1_update@Base 1.2.7+dfsg
  apr_sha1_update_binary@Base 1.2.7+dfsg
+ apr_siphash24@Base 1.6.0
+ apr_siphash24_auth@Base 1.6.0
+ apr_siphash48@Base 1.6.0
+ apr_siphash48_auth@Base 1.6.0
+ apr_siphash@Base 1.6.0
+ apr_siphash_auth@Base 1.6.0
  apr_strmatch_precompile@Base 1.2.7+dfsg
  apr_text_append@Base 1.2.7+dfsg
  apr_thread_pool_busy_count@Base 1.3.2+dfsg
