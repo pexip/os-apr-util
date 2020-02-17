@@ -1,3 +1,9 @@
+apr-util (1.6.1-4pexip1) pexip; urgency=medium
+
+  * Migrate to Buster
+
+ -- Vincent Sanders <vince@pexip.com>  Mon, 17 Feb 2020 13:53:12 +0000
+
 apr-util (1.6.1-4) unstable; urgency=medium
 
   * Fix libaprutil1-dbd-mysql with mariadb 10.3. Closes: #926400
