@@ -1,3 +1,9 @@
+apr-util (1.6.1-4pexip2) pexip; urgency=medium
+
+  * Rebuild in buster environment
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Wed, 15 Jul 2020 16:49:31 +0000
+
 apr-util (1.6.1-4pexip1) pexip; urgency=medium
 
   * Migrate to Buster
