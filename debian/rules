@@ -107,7 +107,7 @@ override_dh_auto_install:
 	perl -p -i -e "s,^dependency_libs=.*,dependency_libs=''," debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/libaprutil-1.la
 
 override_dh_strip:
-	dh_strip --dbg-package=libaprutil1-dbg
+	dh_strip --dbgsym-migration='libaprutil1-dbg (<= 1.6.1-3)'
 
 # The -X option causes the internal-use-only driver libs to be ignored
 override_dh_makeshlibs:
